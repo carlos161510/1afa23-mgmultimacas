@@ -229,7 +229,7 @@ input[type=radio] {
     float: left;
     margin: 5px 0;
 }
-.faleconosco ul li{
+.faleconosco ul li {
     display: inline-block;
     background-color: #d2d2d2;
     padding: 10px;
@@ -238,10 +238,11 @@ input[type=radio] {
     margin: 10px 0;
 }
 
-.faleconosco textarea {
+.faleconosco textarea{
     width: 500px;
 }
-.sobre p {
+
+.sobre p{
     text-align: justify;
     width: 95%;
 }
@@ -249,13 +250,88 @@ input[type=radio] {
 .clear{
     clear: both;
 }
+.dropdown{
+    display: none;
+}
 
 /*SCREEN 480PX */
-@media (max-width:480px){
-    body{
-        background-color: #000;
+@media (max-width: 1200px){
+    .dropdown{
+        display: block;
+        text-align: center;
+        background: #ffda1f;
     }
-    .contato{
+    .dropdown a{
+        color: #000;
+        line-height: 30px;
+    }
+
+    .dropdown img{
+        margin-top: 20px;
+    }
+
+    .dropdown i{
+        font-size: 35px;
+    }
+
+    #header{
         display: none!important;
     }
+    .nome,nav.menu,#logotipo{
+        display: none;
+    }
+    #logotipo {
+        width: 100%;
+        text-align: center;
+    }
+    section{
+        width: 100%;
+    }
+    #header{
+        padding: 20px;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .marcas ul li {
+        width: 32%;
+        
+    }
+    .item {
+        display: inline-block;
+        width: 97%;
+    }
+    .botao a {
+        font-size: 14px;
+    }
+    .depoimentos .item {
+        width: 60%;
+        max-width: 280px;
+    }
 }
+
+@media (max-width: 767px) and (min-widtn:481px){
+    .marcas ul li {
+        width: 25%;
+    }
+    .item{
+        width: 30%;
+    }
+    footer .item{
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px){
+    .content {
+        width: calc(100% - 40px);
+    }
+    .titulo {
+        line-height: initial;
+    }
+}
+
+
